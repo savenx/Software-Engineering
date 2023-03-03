@@ -7,7 +7,7 @@ Hello and welcome to my GitHub repository! My name is Sávio Augusto Soares Fons
 
 - [About Me](#about-me)
 - [Repository Overview](#repository-overview)
-- [Contact Information](#contact-information)
+- [Contact Information](#connect-with-me)
 
 ## About Me
 
