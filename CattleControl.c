@@ -1,0 +1,60 @@
+Algoritmo "ControleGado"
+
+Var
+   i, posImpar, posPar : inteiro
+   totalGado : vetor [1..10] de inteiro
+   gadoPar : vetor [1..10] de inteiro
+   gadoImpar : vetor [1..10] de inteiro
+
+Procedimento separacaoGado
+Inicio
+
+   posImpar <- 1
+   posPar <- 2
+
+   para i de 1 ate 10 faça
+      se totalGado[i]% 2 = 0 entao
+         se posImpar < 10 entao
+            gadoPar[posPar] <- totalGado[i]
+            posPar:=posPar+1
+         fimSe
+      senao
+         se posPar < 10 entao
+            gadoImpar[posImpar] <- totalGado[i]
+            posImpar:=posImpar+1
+         fimSe
+      fimSe
+   fimPara
+
+FimProcedimento
+
+Inicio
+
+   escreval("========= Controle de Gados e pastos =========")
+   escreval("")
+   para i de 1 ate 10 faça
+      escreva("Informe o numero do gado:")
+      leia(totalGado[i])
+   fimPara
+   separacaoGado()
+   limpatela
+   escreval("========== LISTAGEM DE GADO POR PASTO ==========")
+   escreval("")
+   escreval("Gados do pasto 1: ")
+   para i de 1 ate 10 faça
+      se totalGado[i]%2 = 0 entao
+         escreva(totalGado[i])
+      fimSe
+   fimPara
+   escreval("")
+   escreval("")
+   escreval("Gados do pasto 2: ")
+   para i de 1 ate 10 faça
+      se totalGado[i]%2 = 1 entao
+         escreva(totalGado[i])
+      fimSe
+   fimPara
+
+
+
+Fimalgoritmo
